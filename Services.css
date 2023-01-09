@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	box-sizing: border-box;
+}
+
+.header
+{
+	height: 40vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/The-Perfect-Smile.jpg);
+	background-position: 50% 15%;
+	background-size: cover;
+}
+
+.header_border{
+	margin-left: 180px;
+	box-shadow: 0 2px 0px #efefef;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top{
+	height: 7vh;
+	position: relative;
+}
+.images {
+	postition: absolute;
+	padding-left:180px
+}
+
+.topheader
+{
+	width:3.8%;
+	left: 180px;
+}
+
+.toptext {
+	transform: translate(120px, -140%);
+	width: 80%;
+	text-align: right;
+}
+
+.toptext ul li
+{
+	display: inline-block;
+	right:0;
+	font-size: 100%;
+	padding-left: 5%;
+	padding-top: 1.1%;
+}
+
+
+nav img{
+	width: 500px;
+}
+.nav-link{
+	flex: 1;
+	text-align: right;
+}
+.nav-link ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 45px;
+	position: relative;
+}
+.nav-link ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav-link ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+	width: 100%;
+}
+
+.text-box{
+	padding-top: 3.5%;
+	margin: auto;
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+}
+
+.services {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 600;
+	
+}
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding:10px;
+}
+
+.row-1, .row-2 {
+	margin-top:5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-col-1 p, .services-col-2 p{
+	color: #777;
+}
+.services-col-1, .services-col-2{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom:5%;
+	padding:20px 12px;
+	box-sizing: border-box;
+}
+
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.services-col-1:hover, .services-col-2:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0, 0.2);
+}
+
+.cta {
+	margin: 100px auto;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/cta1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+	width: 80%;
+}
+
+.cta h1, p{
+	color: #fff;
+	margin-bottom:40px;
+	padding: 0;
+	
+}
+
+.cta-btn-request {
+	vertical-align: middle;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.cta-btn-request:hover{
+	border: 2px solid #fff;
+	transition: 0.5s;
+	border-radius: 15px;
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	
+	
+}
+
+.footer h4{
+	margin-top: 20px;
+	margin-bottom: 25px;
+	font-weight:600;
+}
+
+.footer p{
+	color: #000000;
+}
+
+.icons .fab{
+	color: #f44336;
+}
+.btn-request{
+	display: inline-block;
+	text-decoration: none;
+	color: #777;
+	border: 1px solid #777;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.btn-request:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+	
+}
